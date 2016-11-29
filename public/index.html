@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multi Emoji Markdown Editor</title>
+    <script>
+      setInterval(function() {
+        var provider = document.getElementById("provider").value
+        var markdown = document.getElementById("editor").value
+        var formData = new FormData()
+        formData.append("markdown", markdown)
+
+        fetch(
+          "/markdown/" + provider,
+          { method: "POST", body: formData }
+        ).then(function(response) {
+          return response.json()
+        }).then(function(response) {
+          document.getElementById("view").innerHTML = response.rendered_html
+        })
+      }, 1000)
+    </script>
+  </head>
+  <body>
+    <div>
+      <select id="provider">
+        <option value="apple">Apple</option>
+        <option value="emoji_one">EmojiOne</option>
+        <option value="noto">Noto</option>
+        <option value="twemoji">Twemoji</option>
+      </select>
+    </div>
+    <div style="display: flex">
+      <textarea id="editor" style="width: 50%; height: 800px;"></textarea>
+      <div id="view" style="width: 50%; padding: 10px">View</div>
+    </div>
+  </body>
+</html>
