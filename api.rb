@@ -55,6 +55,10 @@ end
 
 set :port, ENV["PORT"] || 4567
 
+get "/" do
+  redirect to("/index.html")
+end
+
 post "/markdown/:provider" do
   content_type :json
   {
