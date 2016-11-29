@@ -53,6 +53,8 @@ class Renderer
   end
 end
 
+set :port, ENV["PORT"] || 4567
+
 post "/markdown/:provider" do
   content_type :json
   {
