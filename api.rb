@@ -59,7 +59,7 @@ get "/" do
   redirect to("/index.html")
 end
 
-post "/markdown/:provider" do
+post "/markdown" do
   content_type :json
   {
     provider: params[:provider],

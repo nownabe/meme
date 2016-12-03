@@ -9,9 +9,10 @@
         var markdown = document.getElementById("editor").value
         var formData = new FormData()
         formData.append("markdown", markdown)
+        formData.append("provider", provider)
 
         fetch(
-          "/markdown/" + provider,
+          "/markdown",
           { method: "POST", body: formData }
         ).then(function(response) {
           return response.json()
