@@ -37,7 +37,7 @@ class Renderer
   end
 
   def emoji_names
-    Somemoji.send(:emoji_definitions).map { |ed| ed["code"] }
+    emoji_collection.codes
   end
 
   def emoji_path(code)
