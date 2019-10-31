@@ -54,7 +54,7 @@ GEM
       pygments.rb
       sanitize
     rack (1.6.11)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     rugged (0.25.0b10)
     sanitize (4.4.0)
