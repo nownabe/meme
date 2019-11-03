@@ -1,16 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.0.1)
+    activesupport (6.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+      zeitwerk (~> 2.1, >= 2.1.8)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     charlock_holmes (0.7.3)
     coderay (1.1.2)
-    concurrent-ruby (1.0.2)
+    concurrent-ruby (1.1.5)
     crass (1.0.2)
     escape_utils (1.1.1)
     gemoji (3.0.0)
@@ -20,10 +21,11 @@ GEM
       mime-types (>= 1.19)
       rugged (>= 0.23.0b)
     greenmat (3.2.2.1)
-    html-pipeline (2.4.2)
+    html-pipeline (2.12.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
-    i18n (0.7.0)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
     json (2.2.0)
     mem (0.1.5)
     method_source (0.9.2)
@@ -31,7 +33,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.4.0)
-    minitest (5.9.1)
+    minitest (5.13.0)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     nokogumbo (1.4.10)
@@ -70,11 +72,12 @@ GEM
       gemoji (= 3.0.0)
       json
       slop
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (2.0.5)
-    tzinfo (1.2.2)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
     yajl-ruby (1.2.1)
+    zeitwerk (2.2.1)
 
 PLATFORMS
   ruby
