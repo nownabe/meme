@@ -55,7 +55,7 @@ GEM
       mem
       pygments.rb (~> 1.0)
       sanitize
-    rack (2.0.7)
+    rack (2.0.8)
     rack-protection (2.0.7)
       rack
     rugged (0.28.3.1)
