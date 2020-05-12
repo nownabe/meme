@@ -56,7 +56,7 @@ GEM
       mem
       pygments.rb (~> 1.0)
       sanitize
-    rack (2.0.8)
+    rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
     ruby2_keywords (0.0.1)
